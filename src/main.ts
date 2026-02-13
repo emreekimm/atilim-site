@@ -1,3 +1,4 @@
+const BASE = import.meta.env.BASE_URL;
 import "./style.css";
 import { mountApply } from "./apply";
 
@@ -12,7 +13,7 @@ if (location.pathname === "/apply") {
   <header class="topbar">
     <div class="container topbar_inner">
       <a class="brand" href="#about" aria-label="ATILIM LLC">
-        <img class="brand_logo" src="/atilim-logo.svg" alt="ATILIM LLC" />
+        <img class="brand_logo" src="${BASE}atilim-logo.svg" alt="ATILIM LLC" />
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -27,7 +28,7 @@ if (location.pathname === "/apply") {
   <section class="hero">
     <div class="container hero_center">
       <div class="hero_lockup" role="banner" aria-label="ATILIM LLC hero">
-        <img class="hero_logo" src="/atilim-logo.svg" alt="ATILIM logo" />
+        <img class="hero_logo" src="${BASE}atilim-logo.svg" alt="ATILIM logo" />
         <div class="hero_text">
           <div class="hero_kicker">INDUSTRIAL SOLUTIONS</div>
           <div class="hero_llc">LLC</div>
@@ -104,11 +105,11 @@ if (location.pathname === "/apply") {
     <div class="container">
       <h2>Partners</h2>
       <div class="partners_grid" aria-label="Partners logos">
-        <img class="partner_logo" src="/partners/yougain.png" alt="YouGain" loading="lazy" />
-        <img class="partner_logo" src="/partners/sca.png" alt="SCA" loading="lazy" />
-        <img class="partner_logo" src="/partners/dp.png" alt="DP Innovation" loading="lazy" />
-        <img class="partner_logo" src="/partners/atilim-arch.png" alt="ATILIM Architecture" loading="lazy" />
-        <img class="partner_logo" src="/partners/terra.png" alt="Terra Vitalis" loading="lazy" />
+        <img class="partner_logo" src="${BASE}partners/yougain.png" alt="YouGain" loading="lazy" />
+        <img class="partner_logo" src="${BASE}partners/sca.png" alt="SCA" loading="lazy" />
+        <img class="partner_logo" src="${BASE}partners/dp.png" alt="DP Innovation" loading="lazy" />
+        <img class="partner_logo" src="${BASE}partners/atilim-arch.png" alt="ATILIM Architecture" loading="lazy" />
+        <img class="partner_logo" src="${BASE}partners/terra.png" alt="Terra Vitalis" loading="lazy" />
       </div>
     </div>
   </section>
